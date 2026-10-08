@@ -1,0 +1,9 @@
+# Model 1: swift-1.5-iq3_xxs served on i7 (localhost:8080 from i7)
+model:
+  model_name: openai/swift-1.5-iq3_xxs
+  cost_tracking: ignore_errors
+  model_kwargs:
+    api_base: http://localhost:8080/v1
+    api_key: local-server-not-needed
+    drop_params: true
+    parallel_tool_calls: true

@@ -1,0 +1,9 @@
+# Model 2: qwen3.8-27b served on tr4:8080
+model:
+  model_name: openai/qwen3.8-27b
+  cost_tracking: ignore_errors
+  model_kwargs:
+    api_base: http://tr4:8080/v1
+    api_key: local-server-not-needed
+    drop_params: true
+    parallel_tool_calls: true
